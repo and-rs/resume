@@ -23,43 +23,48 @@
   personal-info-position: left,
 )
 
+*Backend & Full-stack Developer - Python, TypeScript/JavaScript, Bash*
+
 == Skills
 #table(
   inset: ( x:0pt ),
   stroke: none,
   column-gutter: 12pt,
   columns: (auto, auto),
-  strong[Web Development],
-  "TypeScript, Node.js, PostgreSQL, React, FastAPI",
-  strong[Data Processing],
-  "Python, SQL, Pandas, Polars",
-  strong[Cloud Services],
-  "AWS (S3, EC2, Lambda, RDS), Terraform, Docker",
-  strong[DevOps],
-  "Git, Linux, Nix, Terminal Commands",
+  strong[Backend Development],
+  "Django, FastAPI, Node.js, Express.js, SQL (Postgres, Oracle)",
+  strong[Frontend Development], 
+  "React, Angular (learning), Next.js, HTMX, Tailwind CSS",
+  strong[Cloud & Infrastructure],
+  "AWS (Lambda, S3, RDS, CDK, EC2), Docker, CI/CD",
+  strong[Data Engineering],
+  "SQL, Pandas, Polars, Data Pipelines",
+  strong[DevOps & Tooling],
+  "Git, Linux, Nix, Neovim"
 )
 
 == Work Experience
 
 #work(
-  title: "Data Analyst / Engineer",
+  title: "Data Engineer",
   location: "Remote, US",
   company: "LogicSource",
   dates: dates-helper(start-date: "May 2025", end-date: "Present"),
 )
-- Build and maintain monthly procurement/spend pipelines on proprietary cloud using Python with validation and monitoring.
-- Automated file loading and type checks to cut manual steps, reducing average pipeline run time and task duration by about 20%.
-- Integrate and transform data from Oracle SQL sources, and produce reporting-ready models.
+- Built and maintained data pipelines using Python with validation and monitoring, reducing manual processes by 20%.
+- Integrated and transformed data from Oracle SQL sources into reporting-ready models.
+- Automated infrastructure using AWS cloud services and infrastructure-as-code principles.
 
 #work(
-  title: "Fullstack Developer",
+  title: "Full-stack Developer",
   location: "Bogotá, CO",
   company: "Freelance",
-  dates: dates-helper(start-date: "Dec 2023", end-date: "Apr 2024"),
+  dates: dates-helper(start-date: "Dec 2023", end-date: "Apr 2025"),
 )
-- Built a file‑ingestion system that hashed streamed uploads and wrote to a local blockchain database for versioning. Used dockerized MinIO for storage, Bun + Hono for the backend, and SolidJS for the frontend.
-- Developed custom business sites and portfolios with Next.js (SSR/ISR) and integrated CMS, analytics, and SEO.
-- Shipped full‑stack CRUD apps and set up CI and containerized services for consistent dev and prod environments.
+- Developed full-stack applications using Python (FastAPI), Node.js (Bun/Hono), and modern frontends (Next.js, SolidJS).
+- Built a file-ingestion system with streamed hashing and versioning using dockerized MinIO for storage.
+- Created business sites with CMS integration, analytics, and SEO optimization.
+- Implemented CI/CD pipelines and containerized services for consistent development and production environments.
 
 #work(
   title: "Frontend Developer Apprenticeship",
@@ -67,30 +72,27 @@
   company: "HENRY",
   dates: dates-helper(start-date: "Sep 2023", end-date: "Nov 2023"),
 )
-- Built e‑commerce features with React and Redux on an Express.js backend.
-- Worked in a team using Git flow, opened PRs, resolved merge conflicts, and followed reviews.
-- Learned production workflows such as state management, API integration, and testing while delivering sprint tasks on time.
-
+- Built e-commerce features with React and Redux on an Express.js backend.
+- Collaborated in agile teams using Git flow, PR reviews, and sprint delivery.
+- Gained experience in state management, API integration, and testing workflows.
 
 == Projects
-
-#project(
-  name: "Appointments App",
-  url: "github.com/and-rs/appointments",
+#generic-two-by-two(
+  top-left: strong[Appointments App (Full-stack)],
+  top-right: link("https://appointments-jet.vercel.app")[appointments-jet.vercel.app],
+  bottom-left: "",
+  bottom-right: link("https://github.com/and-rs/appointments")[github.com/and-rs/appointments]
 )
-- Simple CRUD app but most importantly a showcase of AWS code as infrastructure with CDK and managed tooling versions with Nix. Database, Lambda and VPC setup, used Express.js for the backend and Next.js for the frontend.
+- Developed and deployed a full-stack CRUD application frontend (Next.js) to Vercel.
+- Built a backend API (Express.js) and infrastructure-as-code using AWS CDK (Lambda, RDS, VPC).
+- Took the AWS stack down post-demo to avoid ongoing costs, but the code fully documents the deployable infrastructure.
 
 #project(
-  name: "Caminatas (Trepa Cerros) WIP",
+  name: "Caminatas (Business Site)",
   url: "github.com/and-rs/caminatas",
 )
-- Business site for a hiking/trekking event company. With content management and scheduling support, using a lightweight server-side focused stack; FastApi + HTMX + Jinja + Tailwind.
-
-#project(
-  name: "Neovim Config",
-  url: "github.com/and-rs/nvim",
-)
-- Created and currently maintain a neovim configuration with over 72 stars.
+- Built a server-side focused business site using FastAPI + HTMX + Jinja + Tailwind.
+- Currently implementing content management and scheduling features for a trekking company.
 
 == Education
 
@@ -109,6 +111,8 @@
   degree: "Data Analysis Diploma",
   consistent: true
 )
+
+== Certificates
 
 #certificates(
   issuer: "British Council",
